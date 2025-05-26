@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/images/logo-1.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta
+      name="description"
+      content="Fedezd fel NyeroTura galériáját, ahol lenyűgöző festmények és művészeti alkotások várnak rád. Fedezd fel a legújabb művészeti trendeket, és élvezd a vizuális élményt a legjobb művészek munkáin keresztül."
+    />
+
+    <meta
+      name="keywords"
+      content="művészeti galéria, festmények, modern művészet, festmények eladásra, művészet galéria, kortárs művészet, festők, vizuális művészet, művészeti alkotások"
+    />
+
+    <title>Történelem Nyerotura | Fedezd fel a művészet világát</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Playfair Display", serif;
+      }
+
+      body {
+        font-family: "Lora", serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-gray-800 font-sans">
+    <header
+      class="fixed top-0 left-0 w-full bg-gradient-to-r from-white via-blue-600 to-white backdrop-blur z-50 shadow-md"
+    >
+      <div
+        class="container mx-auto flex items-center justify-between px-4 py-3"
+      >
+        <a href="/" class="flex items-center gap-2">
+          <img
+            src="/assets/images/logo-1.png"
+            alt="Spintesoro Logo"
+            class="w-14 h-14"
+          />
+          <span
+            class="md:text-xl font-bold text-gray-800 text-sm uppercase hover:text-blue-500"
+            >nyerotura</span
+          >
+        </a>
+
+        <button id="menu-toggle" class="lg:hidden focus:outline-none">
+          <svg
+            class="w-6 h-6 text-gray-800"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        <nav
+          class="hidden lg:flex gap-6 text-gray-700 text-lg font-medium transition-all duration-300"
+          id="nav-links"
+        >
+          <a href="/#about" class="hover:text-blue-500 transition">Rólunk</a>
+          <a href="/#products" class="hover:text-blue-500 transition">Képek</a>
+          <a href="/#gallery" class="hover:text-blue-500 transition">Galéria</a>
+          <a href="/#artists" class="hover:text-blue-500 transition"
+            >Mestereink</a
+          >
+          <a href="/#contacts" class="hover:text-blue-500 transition"
+            >Kapcsolatok
+          </a>
+        </nav>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="lg:hidden hidden flex-col bg-white shadow-md px-6 py-4 space-y-4 text-gray-800 font-medium"
+      >
+        <a href="/#about" class="block">Rólunk</a>
+        <a href="/#products" class="block">Képek</a>
+        <a href="/#gallery" class="block">Galéria</a>
+        <a href="/#artists" class="block">Mestereink</a>
+        <a href="/#contacts" class="block">Kapcsolatok</a>
+      </div>
+    </header>
+
+    <main class="py-20 bg-gray-50 mt-4">
+      <div class="container mx-auto px-4">
+        <h1 class="text-3xl font-extrabold text-gray-800 text-center mb-8">
+          Rólunk – NyeroTura Galéria
+        </h1>
+
+        <p class="text-lg text-gray-700 mb-4">
+          A NyeroTura Galéria egy olyan hely, ahol a művészet és a kultúra
+          találkozik, hogy inspirálja és elvarázsolja látogatóinkat. Célunk,
+          hogy bemutassuk a legtehetségesebb művészek alkotásait, és egyedülálló
+          élményt nyújtsunk minden látogatónknak. A galéria különleges
+          atmoszférája lehetővé teszi a művészetek mélyebb megértését és
+          értékelését.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mb-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+              Művészeti Küldetésünk
+            </h2>
+            <p class="text-lg text-gray-700">
+              A NyeroTura Galéria küldetése, hogy a művészetet közelebb hozza a
+              közönséghez. Minden egyes műalkotás, amely nálunk megjelenik,
+              tükrözi a művész szenvedélyét és elkötelezettségét. A galéria
+              által bemutatott művek különböző stílusokat és technikákat
+              ötvöznek, és minden darab egy egyedi történetet mesél el.
+              Művészeink nemcsak helyi, hanem nemzetközi szinten is elismert
+              alkotók, akik a legkülönbözőbb médiumokban dolgoznak.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+              A Galéria Története
+            </h2>
+            <p class="text-lg text-gray-700">
+              A NyeroTura Galéria több mint egy évtizedes múltra tekint vissza.
+              Kezdetben kis helyi művészeti galériaként indultunk, de mára egy
+              elismert kulturális központtá nőttük ki magunkat. A galéria célja,
+              hogy egy olyan teret biztosítson, ahol a művészek szabadon
+              kifejezhetik magukat, és ahol a közönség különleges művészeti
+              élményekben részesülhet. A galéria folyamatosan frissíti
+              kiállításait, hogy mindig valami új és izgalmas élménnyel várja
+              látogatóit.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+              Művészek és Kiállítások
+            </h2>
+            <p class="text-lg text-gray-700">
+              A NyeroTura Galéria otthont ad a legkülönbözőbb művészeknek, akik
+              különféle technikákat és stílusokat alkalmaznak. A kiállításaink
+              gyakran változnak, hogy mindig újabb és újabb alkotásokkal
+              lepjenek meg minket. A galéria az egyik legfontosabb
+              célkitűzésének tekinti, hogy olyan platformot biztosítson a
+              művészeknek, ahol nemcsak bemutathatják munkáikat, hanem
+              kapcsolatba léphetnek a közönséggel is. Minden kiállításunk egy új
+              élményt kínál, amely mélyebb kapcsolatot teremt a művészetekkel.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+          <div>
+            <img
+              src="/assets/images/g2.jpg"
+              alt="NyeroTura Galéria"
+              class="w-full h-80 object-cover rounded-lg shadow-md"
+            />
+          </div>
+
+          <div>
+            <img
+              src="/assets/images/g3.jpg"
+              alt="Művészet és Képzőművészet"
+              class="w-full h-80 object-cover rounded-lg shadow-md"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-10 px-4">
+      <div
+        class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left"
+      >
+        <div class="text-center">
+          <a href="/" class="inline-block mb-3">
+            <img
+              src="/assets/images/logo-2.png"
+              alt=" Logo"
+              class="h-16 mx-auto md:mx-0"
+            />
+          </a>
+          <p class="text-sm font-bold text-gray-500 uppercase">nyerotura</p>
+        </div>
+
+        <div class="space-y-2 text-center">
+          <h3 class="font-semibold text-lg mb-2">Irányelvek</h3>
+          <ul class="text-sm text-gray-300 space-y-1">
+            <li>
+              <a href="/cookies/" class="hover:underline">Cookie Szabályzat </a>
+            </li>
+            <li>
+              <a href="/privacy/" class="hover:underline"
+                >Adatvédelmi szabályzat
+              </a>
+            </li>
+            <li>
+              <a href="/refund/" class="hover:underline"
+                >Visszatérítési szabályzat
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-2 text-center">
+          <h3 class="font-semibold text-lg mb-2">Nyerotura</h3>
+          <ul class="text-sm text-gray-300 space-y-1">
+            <li>
+              <a href="/about/" class="hover:underline">Történelem Nyerotura</a>
+            </li>
+            <li>
+              <a href="/gallery/" class="hover:underline">Katalógus </a>
+            </li>
+            <li>
+              <a href="/unique/" class="hover:underline">Egyedi stílus </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="space-y-2 text-center">
+          <p class="text-sm text-gray-300">
+            Email:
+            <a href="mailto:support@nyerotura.com" class="hover:underline"
+              >support@nyerotura.com</a
+            >
+          </p>
+          <p class="text-xs text-gray-500">
+            © 2025 nyerotura.com — All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/assets/js/mob-menu.js"></script>
+  </body>
+</html>
